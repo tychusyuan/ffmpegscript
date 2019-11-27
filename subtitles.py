@@ -2,7 +2,7 @@ import os
 import hashlib
 
 lst = [
-    {"m":"Why SpaceX is Making Starlink.mp4","s":"Why SpaceX is Making Starlink.zh-Hans.ass"}
+    {"m":"Is The F-35 Worth $115 Million.mp4","s":"Is The F-35 Worth $115 Million.zh-Hans.ass"}
 ]
 
 sdir="/Users/yuanliqiang/youtube/"
