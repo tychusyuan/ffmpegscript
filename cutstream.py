@@ -7,16 +7,13 @@ import re
 import os
 import json
 
-lst = [
-    "https://www.youtube.com/watch?v=2hYFOXiL1EE"
-]
 bdir = "/Users/yuanliqiang/workspace/youtube-dl/"
 sdir = "/Users/yuanliqiang/youtube/"
 ddir = "/Users/yuanliqiang/tmp/"
 lx = 1350
 ly = 1010
 logo = "/Users/yuanliqiang/workspace/youtube-dl/mengmadianjing.png"
-proxy = "socks5://127.0.0.1:1083"
+proxy = "socks5://127.0.0.1:1081"
 display = {}
 
 
@@ -76,5 +73,6 @@ def download(url):
 
 
 if __name__ == "__main__":
-    for item in lst:
-        download(item)
+    with open("/Users/yuanliqiang/workspace/youtube-dl/lst","r") as f:
+        for line in f.readlines():
+            download(line)
